@@ -1,5 +1,4 @@
 div:has(header) {
-    background: #ebebeb;
     display: none;
 }
 html {
