@@ -5,3 +5,8 @@ div:has(header) {
 html {
     filter: invert(0.86) hue-rotate(73deg) saturate(0.7);
 }
+
+/* hide Blogger logo sidebar icon */
+gm-raised-drawer [aria-expanded="true"] div:has(>a[href="https://draft.blogger.com/"] [alt="Blogger"]) {
+    display: none;
+}
