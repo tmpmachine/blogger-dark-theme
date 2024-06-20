@@ -1,0 +1,19 @@
+{
+  "name": "Blogger Dark HTML Editor",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Apply dark theme in Blogger HTML editor page.",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://blogger.com/*",
+        "https://draft.blogger.com/*"
+      ],
+      "css": ["src/css/inject.css"]
+    }
+  ]
+}
