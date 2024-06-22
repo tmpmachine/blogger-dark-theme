@@ -9,11 +9,17 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://blogger.com/*",
-        "https://draft.blogger.com/*"
-      ],
+      "matches": ["https://*.blogger.com/*"],
+      "exclude_matches": ["https://www.blogger.com/comment/*"],
+      "all_frames": true,
       "css": ["src/css/inject.css"]
+    },
+    {
+      "matches": ["https://*.blogger.com/*"],
+      "exclude_matches": ["https://www.blogger.com/comment/*"],
+      "all_frames": true,
+      "match_origin_as_fallback": true,
+      "css": ["src/css/inject-iframe.css"]
     }
   ]
 }
