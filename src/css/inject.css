@@ -9,6 +9,9 @@ img {
 }
 
 /* hide Blogger logo sidebar icon */
+header [aria-label="Blogger"] {
+    opacity: 0;
+}
 /* gm-raised-drawer [aria-expanded="true"] div:has(>a[href="https://draft.blogger.com/"] [alt="Blogger"]) {
     display: none;
 } */
