@@ -2,7 +2,7 @@
     display: none;
 } */
 img {
-    filter: invert(1) hue-rotate(-73deg) saturate(calc(1/0.7));
+    /* filter: invert(1) hue-rotate(-73deg) saturate(calc(1/0.7)); */
 }
 
 /* hide Blogger logo sidebar icon */

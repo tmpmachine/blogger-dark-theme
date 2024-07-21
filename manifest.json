@@ -10,13 +10,13 @@
   "content_scripts": [
     {
       "matches": ["https://*.blogger.com/*"],
-      "exclude_matches": ["https://www.blogger.com/comment/*"],
+      "exclude_matches": ["https://www.blogger.com/comment/*", "https://*.blogger.com/blog/post/edit/*"],
       "all_frames": true,
       "css": ["src/css/inject.css"]
     },
     {
       "matches": ["https://*.blogger.com/*"],
-      "exclude_matches": ["https://www.blogger.com/comment/*"],
+      "exclude_matches": ["https://www.blogger.com/comment/*", "https://*.blogger.com/blog/post/edit/*"],
       "all_frames": true,
       "match_origin_as_fallback": true,
       "css": ["src/css/inject-iframe.css"]
